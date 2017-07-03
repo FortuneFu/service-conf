@@ -1,0 +1,11 @@
+server:
+  port: 10020
+
+task:
+    #管理商户和设备关系(s)
+    updateMerchantDeviceRef: 0 0/30 * * * ?
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.17.21.50:10010/eureka/
